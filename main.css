@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: #faedec;  
+}
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+}
+.choice:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+#user-score,#comp-score{
+    font-size: 5rem;
+    text-align: center;
+}
+#draw-match, #total-match{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.msg-container{
+    text-align: center;
+    margin-top: 2rem;
+
+    #msg{
+        font-size: 2rem;
+        display: inline;
+        padding: 1rem;
+        background-color: gray;
+        color: white;
+        border-radius: 1rem;
+        @media only screen and (max-width: 660px){
+            font-size: 1rem;
+        }
+    }
+
+
+}
+.d-flex {
+    display: flex;
+    background-color: #2C1A1D;
+    justify-content: center;
+}
+
+.d-flex h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+.d-flex button {
+    margin: 10px;
+    width: 6rem;
+    border-radius: 2rem;
+    background-color: #6C534E;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.d-flex button:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+}
+
